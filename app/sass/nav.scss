@@ -1,0 +1,15 @@
+nav, .navbar{
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0;
+  z-index: 3;
+  ul.nav.navbar-nav.navbar-right{
+      a{
+        color: #fff;
+
+      }
+  }
+
+  img{
+    width: 30px
+  }
+}

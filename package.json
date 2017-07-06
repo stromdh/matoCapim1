@@ -1,0 +1,27 @@
+{
+  "name": "site_sbeckr",
+  "version": "1.0",
+  "title": "Sbecker Assessoria Esportiva",
+  "devDependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-live-server": "0.0.30",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "i": "^0.3.5",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "nodemailer": "^4.0.1"
+  },
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "nodemailer": "^4.0.1"
+  }
+}

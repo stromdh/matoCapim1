@@ -1,0 +1,45 @@
+<div ng-include="'views/modal.html'"></div>
+<section id="atletas">
+  <div class="topoPag">
+    <h3>Atletas representados pela Sbecker</h3>
+  </div>
+  <!-- call -->
+  <div class="container-fluid text-center titulo">
+    <span>Nosso plantel</span>
+    <hr>
+  </div>
+  <!-- atletas -->
+  <div class="listaAtletas">
+    <ul class="list-inline" id="jogadores">
+      <li ng-repeat="atleta in atletas">
+        <a data-toggle="modal" id="{{atleta.id}}" class="modalAtleta" ng-click="populaModal()" data-target="#myModal">
+          <div class="infoAtleta">
+            <h3 ng-bind="atleta.nome"></h3>
+            <hr>
+            <small ng-bind="atleta.posicao"></small>
+          </div>
+          <figure>
+            <img src="{{atleta.foto}}" alt="{{atletas.nome}}">
+          </figure>
+        </a>
+      </li>
+    </ul>
+    <!-- <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Atleta</th>
+          <th>Posição</th>
+          <th>Clube</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="atleta in atletas">
+          <td>{{atleta.nome}}</td>
+          <td>{{atleta.posicao}}</td>
+          <td>{{atleta.clube}}</td>
+        </tr>
+      </tbody>
+    </table> -->
+  </div>
+  <div ng-include="'views/footer.html'"></div>
+</section>

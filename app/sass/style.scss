@@ -1,0 +1,69 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #34495e;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  p{
+    line-height: 20px;
+  }
+}
+
+// -- comuns
+
+.bgOpacity{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.bgOpacityBefore{
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.1;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgTopoPag{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.chamada{
+  margin: 40px;
+
+  font-weight: 300;
+  color: #fff;
+  font-size: 36px;
+}
+
+.latoLeve{
+
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+}
+
+.catamaranLeve{
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 100;
+  color: #fff;
+}

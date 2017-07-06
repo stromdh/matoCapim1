@@ -1,0 +1,55 @@
+#atletas{
+  @extend .bgTopoPag;
+  //background-color: #f39c12;
+  // -- topoPag
+  .topoPag{
+    @extend .bgOpacity;
+    height: 200px;
+
+    //display: flex;
+    //border-bottom: 5px solid #223548;
+    h3{
+      align-self: flex-end;
+      padding: 0 30px;
+      @extend .catamaranLeve;
+    }
+  }
+  .topoPag:before{
+    @extend .bgOpacityBefore;
+    background-image: url('../image/atletas.jpg');
+    background-position: center -180px;
+    opacity: 0.6 !important;
+  }
+
+  ul#jogadores{
+    figure{
+      background-color: #106ec1;
+      img{
+        max-width: 100%;
+        opacity: 0.3;
+      }
+
+    }
+
+    li{
+      width: 33.33%;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      .infoAtleta{
+        position: absolute;
+        width: 100%;
+        padding: 20%;
+        @extend .latoLeve;
+      }
+    }
+  }
+  // -- galeria com os atletas
+  .atletas{
+    //display: flex;
+  }
+
+  footer{
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,32 @@
+#contato{
+  @extend .bgTopoPag;
+  //background-color: #f39c12;
+  // -- topoPag
+  .topoPag{
+    @extend .bgOpacity;
+    height: 200px;
+
+    //display: flex;
+    //border-bottom: 5px solid #223548;
+    h3{
+      align-self: flex-end;
+      padding: 0 30px;
+      @extend .catamaranLeve;
+    }
+  }
+  .topoPag:before{
+    @extend .bgOpacityBefore;
+    background-image: url('../image/torcida.jpg');
+    background-position: center -440px;
+    opacity: 0.3 !important;
+  }
+
+  // -- galeria com os atletas
+  .atletas{
+    //display: flex;
+  }
+
+  footer{
+    margin-top: 50px;
+  }
+}
